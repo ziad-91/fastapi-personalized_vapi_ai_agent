@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice AI Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- We will load Vapi and our logic via ESM in script.js -->
+
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <main class="container">
+        <div class="glass-card">
+            <header>
+                <div class="logo-placeholder">
+                    <span class="logo-icon">✧</span>
+                    <span class="logo-text" id="header-company-name">Voice AI</span>
+                </div>
+            </header>
+
+            <div class="content">
+                <h1 id="greeting">Welcome to your Demo</h1>
+                <p id="subtitle">We are setting up your personalized Voice AI agent...</p>
+
+                <div class="interaction-area">
+                    <!-- Loading State -->
+                    <div id="loading-state" class="state-container active">
+                        <div class="pulsing-circle"></div>
+                        <span class="status-text">Preparing your agent...</span>
+                    </div>
+
+                    <!-- Ready State -->
+                    <div id="ready-state" class="state-container hidden">
+                        <button id="start-btn" class="primary-btn glow-effect">
+                            Start Interactive Demo
+                        </button>
+                    </div>
+
+                    <!-- Active Call State -->
+                    <div id="active-state" class="state-container hidden">
+                        <div class="wave-animation">
+                            <span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                        <span class="status-text active-call-text">Agent is listening...</span>
+                        <button id="end-btn" class="secondary-btn">End Call</button>
+                    </div>
+
+                    <!-- Error State -->
+                    <div id="error-state" class="state-container hidden">
+                        <div class="error-icon">⚠️</div>
+                        <span id="error-message" class="status-text error-text">Something went wrong.</span>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <p>Powered by <a href="#" target="_blank">Fern Systems AI</a></p>
+            </footer>
+        </div>
+    </main>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
