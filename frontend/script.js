@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Update UI with Airtable data
             greeting.textContent = `Welcome, ${data.firstName}!`;
-            subtitle.textContent = `We've prepared an agent focused on your role as ${data.jobTitle}.`;
+            subtitle.textContent = `Just pretend you're a ${data.jobTitle} going through a pre-screen call.`;
 
             // Update header logo text
             const headerLogo = document.getElementById('header-company-name');
