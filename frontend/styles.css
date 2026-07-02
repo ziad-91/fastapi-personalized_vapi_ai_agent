@@ -247,10 +247,6 @@ h1 {
 .outline-btn:hover {
     background: rgba(228, 200, 165, 0.1);
 }
-    cursor: pointer;
-    transition: all 0.2s ease;
-    margin-top: 20px;
-}
 
 .secondary-btn:hover {
     background: rgba(239, 68, 68, 0.2);
@@ -268,17 +264,17 @@ h1 {
 @keyframes pulse {
     0% {
         transform: scale(0.8);
-        box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+        box-shadow: 0 0 0 0 var(--accent-glow);
     }
 
     70% {
         transform: scale(1);
-        box-shadow: 0 0 0 20px rgba(59, 130, 246, 0);
+        box-shadow: 0 0 0 20px rgba(228, 200, 165, 0);
     }
 
     100% {
         transform: scale(0.8);
-        box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+        box-shadow: 0 0 0 0 rgba(228, 200, 165, 0);
     }
 }
 
@@ -324,7 +320,7 @@ h1 {
 
     50% {
         height: 40px;
-        background: #60a5fa;
+        background: var(--accent-primary);
     }
 }
 
