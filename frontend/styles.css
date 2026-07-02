@@ -228,6 +228,9 @@ h1 {
     font-size: 1rem;
     font-weight: 500;
     font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 25px;
 }
 
 .outline-btn {
